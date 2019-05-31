@@ -22,9 +22,20 @@ body {
   margin: 0 auto;
 }
 
-.title-container {
+.title-container,
+#default {
   height: 90vh;
-  background: url("/rain.gif") center center no-repeat;
+  background: url("/default.gif") center center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #000;
+}
+#snow {
+  height: 90vh;
+  background: url("/snow.gif") center center no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -33,6 +44,36 @@ body {
   color: #000;
 }
 
+#rain {
+  height: 90vh;
+  background: url("/rain1.gif") center center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #000;
+}
+#thunder {
+  height: 90vh;
+  background: url("/thunder.gif") center center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #000;
+}
+#sunny {
+  height: 90vh;
+  background: url("/sunny.gif") center center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #000;
+}
 .title-container__title {
   font-size: 50px;
   letter-spacing: 2px;
