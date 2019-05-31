@@ -38,7 +38,33 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Title />
+        <div class="wrapper">
+          <div class="main">
+            <div class="container">
+              <div class="row">
+                <div className="col-xs-5 title-container">
+                  <Title />
+                </div>
+                <div className="col-xs-7 form-container">
+                  <Form Weather={this.Weather} />
+                  <Weather
+                    temp={this.state.temp}
+                    city={this.state.city}
+                    country={this.state.country}
+                    humidity={this.state.humidity}
+                    desc={this.state.desc}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
+{
+  /* <Title />
         <Form Weather={this.Weather} />
         <Weather
           temp={this.state.temp}
@@ -46,8 +72,5 @@ export default class App extends Component {
           country={this.state.country}
           humidity={this.state.humidity}
           desc={this.state.desc}
-        />
-      </div>
-    );
-  }
+        /> */
 }
