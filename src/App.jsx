@@ -40,8 +40,36 @@ export default class App extends Component {
     if (!this.state.desc) {
       return "col-xs-5 default";
     }
-    if (this.state.desc.includes("clouds")) {
+    if (
+      this.state.desc.includes("clouds") ||
+      this.state.desc.includes("haze") ||
+      this.state.desc.includes("hazy") ||
+      this.state.desc.includes("cloud") ||
+      this.state.desc.includes("cloudy")
+    ) {
       return "col-xs-5 haze";
+    } else if (
+      this.state.desc.includes("rain") ||
+      this.state.desc.includes("rainy")
+    ) {
+      return "col-xs-5 rain";
+    } else if (
+      this.state.desc.includes("snow") ||
+      this.state.desc.includes("snowfall")
+    ) {
+      return "col-xs-5 snow";
+    } else if (
+      this.state.desc.includes("thunder") ||
+      this.state.desc.includes("thunderstrom")
+    ) {
+      return "col-xs-5 thunder";
+    } else if (
+      this.state.desc.includes("sunny") ||
+      this.state.desc.includes("clear")
+    ) {
+      return "col-xs-5 sunny";
+    } else {
+      return "col-xs-5 default";
     }
   };
 
