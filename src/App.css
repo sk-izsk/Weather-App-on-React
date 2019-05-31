@@ -23,7 +23,7 @@ body {
 }
 
 .title-container,
-#default {
+.default {
   height: 90vh;
   background: url("/default.gif") center center no-repeat;
   background-size: cover;
@@ -34,7 +34,7 @@ body {
   color: #000;
   padding: 25px;
 }
-#snow {
+.snow {
   height: 90vh;
   background: url("/snow.gif") center center no-repeat;
   background-size: cover;
@@ -45,7 +45,7 @@ body {
   color: #000;
 }
 
-#rain {
+.rain {
   height: 90vh;
   background: url("/rain1.gif") center center no-repeat;
   background-size: cover;
@@ -55,7 +55,7 @@ body {
   text-align: center;
   color: #000;
 }
-#thunder {
+.thunder {
   height: 90vh;
   background: url("/thunder.gif") center center no-repeat;
   background-size: cover;
@@ -65,7 +65,7 @@ body {
   text-align: center;
   color: #000;
 }
-#sunny {
+.sunny {
   height: 90vh;
   background: url("/sunny.gif") center center no-repeat;
   background-size: cover;
@@ -75,7 +75,7 @@ body {
   text-align: center;
   color: #000;
 }
-#haze {
+.haze {
   height: 90vh;
   background: url("/haze.gif") center center no-repeat;
   background-size: cover;

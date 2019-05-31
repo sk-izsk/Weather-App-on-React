@@ -5,7 +5,7 @@ import Form from "./Component/Form.jsx";
 import Weather from "./Component/Weather.jsx";
 const API = "2d6c038d2a03b7478919c4c5d35651ba";
 // const API = process.env.local.API_KEY;
-let profile = "default";
+// let profile = "col-xs-5 default";
 
 export default class App extends Component {
   constructor(props) {
@@ -36,6 +36,14 @@ export default class App extends Component {
       desc: data.weather[0].description
     });
   };
+  getProfile = () => {
+    if (!this.state.desc) {
+      return "col-xs-5 default";
+    }
+    if (this.state.desc.includes("clouds")) {
+      return "col-xs-5 haze";
+    }
+  };
 
   render() {
     return (
@@ -44,7 +52,7 @@ export default class App extends Component {
           <div class="main">
             <div class="container">
               <div class="row">
-                <div className="col-xs-5" id={profile}>
+                <div className={this.getProfile()}>
                   <Title />
                 </div>
                 <div className="col-xs-7 form-container">
