@@ -48,7 +48,7 @@ body {
 
 .rain {
   height: 90vh;
-  background: url("/rain1.gif") center center no-repeat;
+  background: url("/rain.gif") center center no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
